@@ -2,29 +2,30 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import InternetExplorer from "@/components/ie";
+import AboutMe from "@/components/about-me";
 
-export default function RecycleBinDesktopIcon() {
+export default function ContactDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
 
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <InternetExplorer windowId={windowId} />,
-      "Internet Explorer",
-      "/png/iexplorer.png"
+      () => <AboutMe windowId={windowId} initialTab="contact" />,
+      "System Properties",
+      "/png/envelope.png"
     );
   };
 
   return (
     <Icon
-      id="ie"
-      x={230}
-      y={100}
-      iconSrc="/png/iexplorer.png"
-      title="Internet Explorer"
+      id="contact-me"
+      x={10}
+      y={460}
+      iconSrc="/png/envelope.png"
+      title="Contact Me"
       onDoubleClick={handleDoubleClick}
     />
   );
 }
+

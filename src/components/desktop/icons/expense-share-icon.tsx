@@ -1,38 +1,31 @@
 "use client";
 
-import { use } from "react";
-
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import Github from "@/components/github";
-import { GithubType } from "../desktop-content";
+import ExpenseShare from "@/components/expense-share";
 
-export default function LinkedinDesktopIcon({
-  repos,
-}: {
-  repos: Promise<Array<GithubType>>;
-}) {
+export default function ExpenseShareDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
-  const response = use(repos);
-  
+
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <Github windowId={windowId} repos={response} />,
-      "Github Repos",
+      () => <ExpenseShare windowId={windowId} />,
+      "ExpenseShare - Group Expense Tracker",
       "/png/folder.png"
     );
   };
 
   return (
     <Icon
-      id="github"
-      x={560}
-      y={100}
+      id="expense-share"
+      x={340}
+      y={10}
       iconSrc="/png/folder.png"
-      title="Github Repos"
+      title="ExpenseShare"
       onDoubleClick={handleDoubleClick}
     />
   );
 }
+

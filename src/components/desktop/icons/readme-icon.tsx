@@ -25,8 +25,8 @@ export default function ReadmeDesktopIcon() {
   return (
     <Icon
       id="readme"
-      x={10}
-      y={190}
+      x={340}
+      y={100}
       iconSrc="/webp/notepad.webp"
       title="This project.txt"
       onDoubleClick={handleDoubleClick}

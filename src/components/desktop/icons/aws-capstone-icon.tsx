@@ -2,29 +2,30 @@
 
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import MediaPlayer from "@/components/media-player";
+import AWSCapstone from "@/components/aws-capstone";
 
-export default function VideoDesktopIcon() {
+export default function AWSCapstoneDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
 
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <MediaPlayer windowId={windowId} />,
-      "Windows Media Player",
-      "/webp/media-player.webp"
+      () => <AWSCapstone windowId={windowId} />,
+      "AWS Cloud Architecting Capstone",
+      "/png/network.png"
     );
   };
 
   return (
     <Icon
-      id="aboutme"
-      x={10}
-      y={280}
-      iconSrc="/webp/media-player.webp"
-      title="Windows Media Player"
+      id="aws-capstone"
+      x={450}
+      y={10}
+      iconSrc="/png/network.png"
+      title="AWS Capstone"
       onDoubleClick={handleDoubleClick}
     />
   );
 }
+

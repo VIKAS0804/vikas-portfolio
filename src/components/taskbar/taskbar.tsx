@@ -9,7 +9,6 @@ import {
   IEPinIcon,
   LinkedinPinIcon,
   ReadmePinIcon,
-  VideoPinIcon,
 } from "@/components/taskbar/pin-icons";
 
 export default function Taskbar() {
@@ -23,7 +22,6 @@ export default function Taskbar() {
       <div className="flex flex-none items-center gap-2 px-3">
         <IEPinIcon />
         <ReadmePinIcon />
-        <VideoPinIcon />
         <LinkedinPinIcon />
       </div>
       <div className="flex grow items-center gap-1 overflow-x-auto">

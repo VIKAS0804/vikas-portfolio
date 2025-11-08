@@ -1,38 +1,31 @@
 "use client";
 
-import { use } from "react";
-
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import Github from "@/components/github";
-import { GithubType } from "../desktop-content";
+import MySkills from "@/components/my-skills";
 
-export default function LinkedinDesktopIcon({
-  repos,
-}: {
-  repos: Promise<Array<GithubType>>;
-}) {
+export default function MySkillsDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
-  const response = use(repos);
-  
+
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <Github windowId={windowId} repos={response} />,
-      "Github Repos",
+      () => <MySkills windowId={windowId} />,
+      "My Skills",
       "/png/folder.png"
     );
   };
 
   return (
     <Icon
-      id="github"
-      x={560}
-      y={100}
+      id="my-skills"
+      x={10}
+      y={190}
       iconSrc="/png/folder.png"
-      title="Github Repos"
+      title="My Skills"
       onDoubleClick={handleDoubleClick}
     />
   );
 }
+

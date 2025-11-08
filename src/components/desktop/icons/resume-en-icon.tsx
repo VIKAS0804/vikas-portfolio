@@ -12,26 +12,26 @@ export default function ResumeDesktopIcon() {
     openWindow(
       windowId,
       () => (
-        <Window windowId={windowId} windowTitle="My Resume in English.pdf">
+        <Window windowId={windowId} windowTitle="My Resume.pdf">
           <iframe
-            src="/pdf/paulo-r-oliveira-en.pdf"
+            src="/pdf/vikas-resume.pdf"
             width="100%"
             height="100%"
           />
         </Window>
       ),
-      "My Resume in English.pdf",
+      "My Resume.pdf",
       "/svg/pdf.svg"
     );
   };
 
   return (
     <Icon
-      id="readme"
-      x={120}
-      y={10}
+      id="resume"
+      x={10}
+      y={370}
       iconSrc="/svg/pdf.svg"
-      title="My Resume in English.pdf"
+      title="My Resume"
       onDoubleClick={handleDoubleClick}
     />
   );

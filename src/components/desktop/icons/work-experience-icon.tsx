@@ -1,38 +1,31 @@
 "use client";
 
-import { use } from "react";
-
 import { useDesktop } from "@/contexts/desktop-context";
 import Icon from "@/components/icon/desktop-icon";
-import Github from "@/components/github";
-import { GithubType } from "../desktop-content";
+import WorkExperience from "@/components/work-experience";
 
-export default function LinkedinDesktopIcon({
-  repos,
-}: {
-  repos: Promise<Array<GithubType>>;
-}) {
+export default function WorkExperienceDesktopIcon() {
   const { createWindowId, openWindow } = useDesktop();
-  const response = use(repos);
-  
+
   const handleDoubleClick = () => {
     const windowId = createWindowId();
     openWindow(
       windowId,
-      () => <Github windowId={windowId} repos={response} />,
-      "Github Repos",
+      () => <WorkExperience windowId={windowId} />,
+      "Work Experience",
       "/png/folder.png"
     );
   };
 
   return (
     <Icon
-      id="github"
-      x={560}
-      y={100}
+      id="work-experience"
+      x={10}
+      y={280}
       iconSrc="/png/folder.png"
-      title="Github Repos"
+      title="Work Experience"
       onDoubleClick={handleDoubleClick}
     />
   );
 }
+

@@ -3,9 +3,9 @@ Loved for its stability, aesthetics, and the memorable "Bliss" wallpaper.
 
 This is my casual portfolio that I've developed to honor one of the most adorable OS's of the 2000's. This OS was part of my teenage years and because of this I felt very nostalgic while developing this project. 
 
-> 🔗 https://paul8liveira.vercel.app
+> 🔗 Portfolio Website
 
-![portfolio-xp](https://raw.githubusercontent.com/paul8liveira/portfolio-xp/5a403c480f4ffbf6606ec86ae9f1999f2bb9d2a3/public/project-print.jpg)
+![portfolio-xp](https://raw.githubusercontent.com/VIKAS0804/my-xp-portfolio/main/public/project-print.jpg)
 
 ## 👩‍💻 Project stack: 
 - Next.js v15 
@@ -15,8 +15,8 @@ This is my casual portfolio that I've developed to honor one of the most adorabl
 ### 🏃‍♂️ Running locally
 
 ```sh
-git clone https://github.com/paul8liveira/portfolio-xp.git
-cd portfolio-xp
+git clone https://github.com/VIKAS0804/my-xp-portfolio.git
+cd my-xp-portfolio
 npm install 
 npm run dev
 ```

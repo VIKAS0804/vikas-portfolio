@@ -214,8 +214,8 @@ export default function RecycleBinDesktopIcon() {
   return (
     <Icon
       id="bin"
-      x={10}
-      y={100}
+      x={230}
+      y={190}
       iconSrc="/webp/recycle-bin-full.webp"
       title="Recycle Bin"
       onDoubleClick={handleDoubleClick}

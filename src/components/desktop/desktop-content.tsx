@@ -1,14 +1,21 @@
 "use client";
 
 import {
+  MyComputerDesktopIcon,
   RecycleBinDesktopIcon,
   ReadmeDesktopIcon,
   IEDesktopIcon,
-  VideoDesktopIcon,
-  ResumePTDesktopIcon,
-  ResumeENDesktopIcon,
+  ResumeDesktopIcon,
   LinkedinDesktopIcon,
   GithubDesktopIcon,
+  AboutDesktopIcon,
+  CalendarAppDesktopIcon,
+  ExpenseShareDesktopIcon,
+  AWSCapstoneDesktopIcon,
+  FireDetectionRobotDesktopIcon,
+  MySkillsDesktopIcon,
+  WorkExperienceDesktopIcon,
+  ContactDesktopIcon,
 } from "@/components/desktop/icons";
 import WindowManager from "@/components/window/window-manager";
 import { handleMouseMove, handleMouseUp } from "@/utils/drag";
@@ -28,12 +35,24 @@ export default function DeskTopContent({
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
     >
+      {/* Left Column - Primary Actions */}
+      <MyComputerDesktopIcon />
+      <AboutDesktopIcon />
+      <MySkillsDesktopIcon />
+      <WorkExperienceDesktopIcon />
+      <ResumeDesktopIcon />
+      <ContactDesktopIcon />
+      
+      {/* Right Side - Projects Row */}
+      <CalendarAppDesktopIcon />
+      <ExpenseShareDesktopIcon />
+      <AWSCapstoneDesktopIcon />
+      <FireDetectionRobotDesktopIcon />
+      
+      {/* Other Icons */}
       <IEDesktopIcon />
       <RecycleBinDesktopIcon />
       <ReadmeDesktopIcon />
-      <VideoDesktopIcon />
-      <ResumePTDesktopIcon />
-      <ResumeENDesktopIcon />
       <LinkedinDesktopIcon />
       <Suspense>
         <GithubDesktopIcon repos={repos} />

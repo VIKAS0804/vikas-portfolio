@@ -67,7 +67,7 @@ const StartMenuFooter = () => {
 export default function StartButtonContent() {
   return (
     <Content className="start-menu drop-shadow-lg" side="top" sideOffset={1}>
-      <StartMenuHeader name="Paulo Oliveira" />
+      <StartMenuHeader name="Vikas Neriyanuru" />
       {/* left menu */}
       <div className="row-span-7 row-start-3 p-2 space-y-2 bg-white">
         <div className="flex flex-col h-full gap-y-2">
