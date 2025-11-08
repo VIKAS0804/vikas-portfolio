@@ -105,7 +105,7 @@ export default function MyComputer({ windowId }: { windowId: string }) {
                 </h3>
                 <div className="grid grid-cols-2 gap-2">
                   <button
-                    onClick={handleOpenAbout}
+                    onClick={() => handleOpenAbout()}
                     className="flex items-center gap-2 px-2 py-1 text-xs text-left border border-gray-300 bg-white hover:bg-[#d2e5fa] active:bg-[#b8d4f0]"
                   >
                     <Image
