@@ -77,7 +77,7 @@ export default function AboutMe({
               {/* Left Side - Photo */}
               <div className="flex-shrink-0">
                 <div className="w-32 h-32 border-2 border-gray-400 bg-white p-1 shadow-inner">
-                  <img
+                  <Image
                     src="/images/vikas.jpg"
                     width={128}
                     height={128}

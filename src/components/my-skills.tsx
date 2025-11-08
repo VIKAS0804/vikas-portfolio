@@ -4,7 +4,6 @@ import { useState } from "react";
 import Image from "next/image";
 
 import Window from "@/components/window/window";
-import { useDesktop } from "@/contexts/desktop-context";
 
 type SkillCategory = {
   name: string;
@@ -96,20 +95,6 @@ const skillCategories: SkillCategory[] = [
   },
 ];
 
-const ProficiencyBar = ({ proficiency }: { proficiency: number }) => {
-  return (
-    <div className="flex items-center gap-1">
-      <div className="w-20 h-3 border border-gray-400 bg-white relative">
-        <div
-          className="h-full bg-gradient-to-r from-blue-500 to-blue-600"
-          style={{ width: `${proficiency}%` }}
-        />
-      </div>
-      <span className="text-[10px] text-gray-600 w-8">{proficiency}%</span>
-    </div>
-  );
-};
-
 const ProficiencyStars = ({ proficiency }: { proficiency: number }) => {
   const stars = Math.round((proficiency / 100) * 5);
   return (
@@ -130,7 +115,6 @@ const ProficiencyStars = ({ proficiency }: { proficiency: number }) => {
 };
 
 export default function MySkills({ windowId }: { windowId: string }) {
-  const { closeWindow } = useDesktop();
   const [expandedCategories, setExpandedCategories] = useState<Set<string>>(
     new Set()
   );

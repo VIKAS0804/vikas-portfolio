@@ -3,7 +3,6 @@
 import Image from "next/image";
 
 import Window from "@/components/window/window";
-import { useDesktop } from "@/contexts/desktop-context";
 
 type Experience = {
   company: string;
@@ -65,8 +64,6 @@ const experiences: Experience[] = [
 ];
 
 export default function WorkExperience({ windowId }: { windowId: string }) {
-  const { closeWindow } = useDesktop();
-
   return (
     <Window windowId={windowId} windowTitle="Work Experience">
       <div className="flex flex-col h-full bg-[#f0eede] ml-1">
