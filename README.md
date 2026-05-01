@@ -1,44 +1,48 @@
-# Win XP Desktop Simulator
-Loved for its stability, aesthetics, and the memorable "Bliss" wallpaper.
+# Vikas Portfolio
 
-This is my casual portfolio that I've developed to honor one of the most adorable OS's of the 2000's. This OS was part of my teenage years and because of this I felt very nostalgic while developing this project. 
+An interactive portfolio experience built as a Windows XP-inspired desktop. The goal of this project was to turn a personal site into something memorable, playful, and still functional enough to showcase real work.
 
-> 🔗 Portfolio Website
+Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 
-![portfolio-xp](https://raw.githubusercontent.com/VIKAS0804/my-xp-portfolio/main/public/project-print.jpg)
+![Portfolio preview](./public/project-print.jpg)
 
-## 👩‍💻 Project stack: 
-- Next.js v15 
-- Tailwind CSS v3.4 
-- Radix UI v2
+## What It Includes
 
-### 🏃‍♂️ Running locally
+- Desktop-style navigation with draggable icons
+- Draggable and resizable windows for different sections
+- Start menu and taskbar interactions inspired by Windows XP
+- Live clock and desktop-style UI behavior
+- Browser-style window for embedded exploration
+- GitHub projects window connected to my public repositories
 
-```sh
-git clone https://github.com/VIKAS0804/my-xp-portfolio.git
-cd my-xp-portfolio
-npm install 
+## Tech Stack
+
+- Next.js 15
+- React
+- Tailwind CSS
+- Radix UI
+
+## Running Locally
+
+```bash
+git clone https://github.com/VIKAS0804/vikas-portfolio.git
+cd vikas-portfolio
+npm install
 npm run dev
 ```
 
-## 💡 The main ideia: 
-Keeping developing the project using Next.js and its new functionalities as much as possible and keep the look and feel more Windows XP as possible.
+Then open [http://localhost:3000](http://localhost:3000).
 
-## 📜 The main features are: 
-- taskbar with icons and real time clock 
-- draggable desktop icons 
-- draggable and resizable window**
-- double click desktop icons to open window
-- minimize, maximize and close window
-- static start menu made using radix ui dropdown component
-- functinal internet explorer window with address bar and go button (note: most of web sites does not allow to be rendered in an iframe due to security reasons)
-- github repos window that fetches the repos from my github account
+## Why I Built It
 
-> **not as I sigh for but functional
+Most portfolios feel interchangeable. I wanted this one to reflect personality as much as technical skill, so I leaned into a nostalgic interface and treated the site like a miniature operating system instead of a standard landing page.
 
-## 🤝 Thanks
-It's important to give the credits to: 
-- the project https://github.com/boranbatuhan/xpmsn that helped me to understant how to use the correct box shadow for Windows XP border effects and where I got some icons. 
-- the CodePen https://codepen.io/jkasun/pen/QrLjXP where the draggable and resizable functions were adapted
+## Notes
 
-I hope you enjoy this project as much as I enjoyed developing it ❤️.
+- Some external websites will not render inside the browser-style window because many sites block iframe embedding for security reasons.
+- The project is intentionally styled around Windows XP, but the implementation uses a modern Next.js frontend stack.
+
+## Inspiration
+
+- [xpmsn](https://github.com/boranbatuhan/xpmsn) for reference on XP-style visual details
+- [This CodePen](https://codepen.io/jkasun/pen/QrLjXP) for ideas around draggable and resizable interactions
