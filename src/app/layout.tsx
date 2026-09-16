@@ -7,12 +7,13 @@ import DynamicTitle from "@/components/DynamicTitle";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vikasneriyanuru.com"),
   title: {
     default: "Vikas Neriyanuru | Software Engineer Portfolio",
     template: "%s | Vikas Neriyanuru",
   },
   description:
-    "Software Development Engineer with 2+ years experience at Jio Platforms. MS CS @ Northeastern University. Full-stack developer specializing in React, Node.js, Java, and AWS cloud architecture.",
+    "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
   keywords: [
     "Vikas Neriyanuru",
     "Software Engineer",
@@ -22,7 +23,8 @@ export const metadata: Metadata = {
     "AWS",
     "Northeastern University",
     "Boston",
-    "Co-op",
+    "Graduate Teaching Assistant",
+    "Applied ML",
   ],
   authors: [{ name: "Vikas Neriyanuru" }],
   icons: {
@@ -31,9 +33,9 @@ export const metadata: Metadata = {
     apple: "/favicon.ico",
   },
   openGraph: {
-    title: "Vikas Neriyanuru - Software Engineer",
+    title: "Vikas Neriyanuru | Software Engineer",
     description:
-      "Software Development Engineer with 2+ years experience at Jio Platforms. MS CS @ Northeastern University. Full-stack developer specializing in React, Node.js, Java, and AWS cloud architecture.",
+      "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
     type: "website",
     url: "https://vikasneriyanuru.com",
     images: [
@@ -41,15 +43,15 @@ export const metadata: Metadata = {
         url: "/images/vikas.jpg",
         width: 1200,
         height: 630,
-        alt: "Vikas Neriyanuru - Software Engineer",
+        alt: "Vikas Neriyanuru | Software Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Vikas Neriyanuru - Software Engineer",
+    title: "Vikas Neriyanuru | Software Engineer",
     description:
-      "Software Development Engineer with 2+ years experience at Jio Platforms. MS CS @ Northeastern University. Full-stack developer specializing in React, Node.js, Java, and AWS cloud architecture.",
+      "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
     images: ["/images/vikas.jpg"],
   },
 };
