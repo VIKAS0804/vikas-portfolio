@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Vikas Neriyanuru",
   },
   description:
-    "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
+    "A playful Windows XP inspired home for Vikas Neriyanuru's products, systems, experiments, and engineering work across full stack, cloud, and applied machine learning.",
   keywords: [
     "Vikas Neriyanuru",
     "Software Engineer",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vikas Neriyanuru | Software Engineer",
     description:
-      "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
+      "A playful Windows XP inspired home for Vikas Neriyanuru's products, systems, experiments, and engineering work across full stack, cloud, and applied machine learning.",
     type: "website",
     url: "https://vikasneriyanuru.com",
     images: [
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vikas Neriyanuru | Software Engineer",
     description:
-      "Software Developer Intern at Superstars and Graduate Teaching Assistant at Khoury. MS CS candidate at Northeastern University building full-stack, cloud, and applied ML systems.",
+      "A playful Windows XP inspired home for Vikas Neriyanuru's products, systems, experiments, and engineering work across full stack, cloud, and applied machine learning.",
     images: ["/images/vikas.jpg"],
   },
 };

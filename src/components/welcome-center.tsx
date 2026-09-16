@@ -24,25 +24,25 @@ export default function WelcomeCenter({ windowId }: { windowId: string }) {
   const actions = [
     {
       label: "Explore featured projects",
-      detail: "See what I built, how it works, and the engineering decisions behind it.",
+      detail: "Open the products and experiments I am most excited about, then dig into how they work.",
       icon: "/png/folder.png",
       onClick: openProjects,
     },
     {
       label: "Read my experience",
-      detail: "Professional engineering, teaching, and internship experience in one place.",
+      detail: "See the teams, classrooms, and technical problems that have shaped how I build.",
       icon: "/png/sign-paper.png",
       onClick: openExperience,
     },
     {
       label: "Open my resume",
-      detail: "A concise version of my experience, education, and technical background.",
+      detail: "A focused view of my experience, education, and technical background.",
       icon: "/svg/pdf.svg",
       onClick: openResume,
     },
     {
       label: "Contact me",
-      detail: "Email, LinkedIn, GitHub, and the easiest ways to start a conversation.",
+      detail: "Find my email, LinkedIn, and GitHub if something here sparks a conversation.",
       icon: "/png/envelope.png",
       onClick: openContact,
     },
@@ -63,13 +63,14 @@ export default function WelcomeCenter({ windowId }: { windowId: string }) {
               />
             </div>
             <div className="min-w-0 flex-1">
-              <div className="welcome-kicker">WELCOME TO MY PORTFOLIO</div>
+              <div className="welcome-kicker">WELCOME TO MY DIGITAL WORKSPACE</div>
               <h1>Hi, I&apos;m Vikas Neriyanuru.</h1>
               <p className="welcome-lede">
-                I build dependable software across full-stack products, cloud
-                systems, and applied machine learning. I care about clear user
-                experiences, strong engineering fundamentals, and turning complex
-                technical problems into useful products.
+                This portfolio is a passion project and a living home for the products,
+                systems, experiments, and ideas I care about. I enjoy building dependable
+                software across full stack products, cloud systems, and applied machine
+                learning, with equal attention to what happens under the hood and how the
+                experience feels.
               </p>
               <button className="xp-link" onClick={() => openAbout()}>
                 Read the full introduction
@@ -82,10 +83,10 @@ export default function WelcomeCenter({ windowId }: { windowId: string }) {
           <section aria-labelledby="quick-start-heading">
             <div className="section-heading-row">
               <div>
-                <div className="welcome-kicker">START HERE</div>
-                <h2 id="quick-start-heading">A recruiter-friendly quick tour</h2>
+                <div className="welcome-kicker">CHOOSE YOUR PATH</div>
+                <h2 id="quick-start-heading">What would you like to explore?</h2>
               </div>
-              <span className="availability-pill">Open to software engineering opportunities</span>
+              <span className="passion-pill">Built with curiosity, craft, and Windows XP nostalgia</span>
             </div>
             <div className="welcome-actions">
               {actions.map((action) => (
@@ -116,12 +117,19 @@ export default function WelcomeCenter({ windowId }: { windowId: string }) {
                 </div>
               ))}
             </div>
+            <div className="passion-note">
+              <span>WHAT I LOVE BUILDING</span>
+              <p>
+                Thoughtful products, reliable systems, useful machine learning,
+                and interfaces with a little personality.
+              </p>
+            </div>
           </section>
         </div>
 
         <div className="welcome-status">
-          Tip: every desktop icon now opens with one click. Use the top shortcuts
-          whenever you want the fastest route.
+          Every desktop icon opens with one click. Wander around, open a few
+          folders, and make yourself at home.
         </div>
       </div>
     </Window>

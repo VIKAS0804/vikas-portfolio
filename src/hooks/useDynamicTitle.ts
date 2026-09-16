@@ -7,7 +7,7 @@ const TITLES = [
   "Full-Stack Developer | React • Node.js • AWS",
   "MS CS @ Northeastern | Boston",
   "2+ Years at Jio Platforms | 400K+ Users",
-  "Open for Co-op Opportunities",
+  "Products • Systems • Experiments",
   "💻 Vikas Neriyanuru | Portfolio",
 ];
 
@@ -87,4 +87,3 @@ export function useDynamicTitle(isEnabled: boolean = true) {
     };
   }, [isEnabled]);
 }
-

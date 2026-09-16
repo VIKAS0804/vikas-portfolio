@@ -63,7 +63,8 @@ export default function ProjectArchive({ windowId }: { windowId: string }) {
             <h1>Earlier Projects</h1>
             <p>
               These projects remain part of the portfolio history. The current featured
-              work is placed directly on the desktop for faster recruiter access.
+              work lives directly on the desktop, while this folder keeps the earlier
+              experiments and ideas that helped shape what I build today.
             </p>
           </div>
         </div>

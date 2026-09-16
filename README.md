@@ -9,7 +9,7 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 ## What It Includes
 
 - Desktop-style navigation with draggable icons
-- Recruiter-first welcome center that explains who I am and where to start
+- Personal welcome center that introduces the ideas and interests behind the work
 - One-click quick access to projects, experience, resume, and contact information
 - Individual desktop folders and detailed case studies for six featured projects
 - Mobile-friendly project and welcome windows that do not require desktop gestures
@@ -17,7 +17,7 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 - Start menu and taskbar interactions inspired by Windows XP
 - Live clock and desktop-style UI behavior
 - Browser-style window for embedded exploration
-- Curated Featured Work window for the projects I want recruiters to see first
+- Curated Featured Work window for the projects I am actively building and exploring
 - Earlier Projects archive that preserves older work without crowding the main desktop
 - GitHub projects window connected to my public repositories
 
@@ -41,7 +41,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## Why I Built It
 
-Most portfolios feel interchangeable. I wanted this one to reflect personality as much as technical skill, so I leaned into a nostalgic interface and treated the site like a miniature operating system instead of a standard landing page. The Featured Work folder keeps the experience playful while giving visitors a fast path to current work in mobile, cloud, applied ML, and systems.
+Most portfolios feel interchangeable. I wanted this one to reflect personality as much as technical skill, so I leaned into a nostalgic interface and treated the site like a miniature operating system instead of a standard landing page. It is a passion project in its own right: a place to keep shaping how I present ideas, document what I learn, and connect the products I build. The Featured Work folder keeps the experience playful while giving visitors a fast path to current work in mobile, cloud, applied ML, and systems.
 
 ## Notes
 

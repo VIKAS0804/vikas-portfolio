@@ -22,8 +22,8 @@ export default function QuickAccess() {
   ] as const;
 
   return (
-    <nav className="quick-access" aria-label="Portfolio quick access">
-      <span className="quick-access-label">Quick access</span>
+    <nav className="quick-access" aria-label="Explore portfolio">
+      <span className="quick-access-label">Explore</span>
       {actions.map(([label, icon, onClick]) => (
         <button key={label} onClick={onClick}>
           <Image src={icon} width={16} height={16} alt="" />
