@@ -20,6 +20,8 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 - Curated Featured Work window for the projects I am actively building and exploring
 - Earlier Projects archive that preserves older work without crowding the main desktop
 - GitHub projects window connected to my public repositories
+- Clip, a conversational profile guide with project-aware follow-up answers
+- Optional private conversation memory stored in my own Postgres database
 
 ## Tech Stack
 
@@ -27,6 +29,7 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 - React
 - Tailwind CSS
 - Radix UI
+- Neon Postgres for optional conversation memory
 
 ## Running Locally
 
@@ -38,6 +41,13 @@ npm run dev
 ```
 
 Then open [http://localhost:3000](http://localhost:3000).
+
+Clip works without credentials and does not call a paid AI service. To enable
+private conversation memory, create a free Neon database, copy `.env.example`
+to `.env.local`, and add the pooled `DATABASE_URL`. The same variable can be
+added to the Vercel project settings for production. Visitors choose whether to
+save a chat, saved conversations expire after 90 days, and no IP address or
+personal identifier is stored.
 
 ## Why I Built It
 

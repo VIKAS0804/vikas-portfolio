@@ -22,6 +22,7 @@ import { useDesktop } from "@/contexts/desktop-context";
 import { handleMouseMove, handleMouseUp } from "@/utils/drag";
 import { Suspense, useEffect, useRef } from "react";
 import { portfolioProjects } from "@/data/projects";
+import ProfileAssistant from "@/components/profile-assistant";
 
 export type GithubType = { id: number; name: string; html_url: string; language: string, topics: string[] };
 
@@ -80,6 +81,7 @@ export default function DeskTopContent({
       <Suspense>
         <GithubDesktopIcon repos={repos} />
       </Suspense>
+      <ProfileAssistant />
       <WindowManager />
     </div>
   );
