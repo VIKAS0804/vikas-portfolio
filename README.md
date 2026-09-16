@@ -13,6 +13,7 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 - Start menu and taskbar interactions inspired by Windows XP
 - Live clock and desktop-style UI behavior
 - Browser-style window for embedded exploration
+- Curated Featured Work window for the projects I want recruiters to see first
 - GitHub projects window connected to my public repositories
 
 ## Tech Stack
@@ -35,7 +36,7 @@ Then open [http://localhost:3000](http://localhost:3000).
 
 ## Why I Built It
 
-Most portfolios feel interchangeable. I wanted this one to reflect personality as much as technical skill, so I leaned into a nostalgic interface and treated the site like a miniature operating system instead of a standard landing page.
+Most portfolios feel interchangeable. I wanted this one to reflect personality as much as technical skill, so I leaned into a nostalgic interface and treated the site like a miniature operating system instead of a standard landing page. The Featured Work folder keeps the experience playful while giving visitors a fast path to current work in mobile, cloud, applied ML, and systems.
 
 ## Notes
 

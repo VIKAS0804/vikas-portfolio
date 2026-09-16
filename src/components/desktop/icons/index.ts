@@ -13,6 +13,7 @@ import FireDetectionRobotDesktopIcon from "@/components/desktop/icons/fire-detec
 import MySkillsDesktopIcon from "@/components/desktop/icons/my-skills-icon";
 import WorkExperienceDesktopIcon from "@/components/desktop/icons/work-experience-icon";
 import ContactDesktopIcon from "@/components/desktop/icons/contact-icon";
+import FeaturedProjectsDesktopIcon from "@/components/desktop/icons/featured-projects-icon";
 
 export {
   MyComputerDesktopIcon,
@@ -30,4 +31,5 @@ export {
   MySkillsDesktopIcon,
   WorkExperienceDesktopIcon,
   ContactDesktopIcon,
+  FeaturedProjectsDesktopIcon,
 };

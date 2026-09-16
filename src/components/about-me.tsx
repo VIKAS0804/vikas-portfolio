@@ -109,7 +109,7 @@ export default function AboutMe({
                     </h2>
                   </div>
                   <div className="text-sm text-gray-700 mb-2">
-                    Software Development Engineer | MS in CS @ Northeastern
+                    Software Developer Intern at Superstars | Graduate Teaching Assistant at Khoury
                   </div>
                   <div className="text-xs text-gray-600 flex items-center gap-1">
                     <Image
@@ -129,19 +129,17 @@ export default function AboutMe({
                   </h3>
                   <div className="text-xs text-gray-700 leading-relaxed space-y-2">
                     <p>
-                      Software engineer with 2+ years of experience building
-                      enterprise web platforms at Jio Platforms, serving 400,000+
-                      users. Proven track record in full-stack development, cloud
-                      architecture, and system design. Currently pursuing MS in
-                      Computer Science at Northeastern University (Jan 2025 - May
-                      2027).
+                      Software engineer and MS in Computer Science candidate at
+                      Northeastern University. I am currently a Graduate Teaching
+                      Assistant at Khoury and a Software Developer Intern at
+                      Superstars. Previously, I built enterprise web platforms at
+                      Jio Platforms for 400,000+ employees.
                     </p>
                     <p>
-                      Specialized in building scalable microservices with React,
-                      Node.js, and AWS. Reduced manual processing by 40% through
-                      intelligent automation and improved system performance by 25%
-                      via strategic optimization. Passionate about clean code,
-                      system design, and solving complex technical challenges.
+                      I build thoughtful software across full-stack development,
+                      cloud systems, and applied ML. I care about clear product
+                      experiences, reliable engineering, and solving problems that
+                      matter to the people using the software.
                     </p>
                   </div>
                 </div>
@@ -153,9 +151,9 @@ export default function AboutMe({
                   </h3>
                   <div className="grid grid-cols-2 gap-2">
                     <div className="border-2 border-gray-400 bg-[#f0f0f0] p-2 shadow-inner">
-                      <div className="text-xs font-bold text-gray-900">2+ years</div>
+                      <div className="text-xs font-bold text-gray-900">60+ students</div>
                       <div className="text-[10px] text-gray-600">
-                        Professional SDE Experience
+                        Supported at Khoury
                       </div>
                     </div>
                     <div className="border-2 border-gray-400 bg-[#f0f0f0] p-2 shadow-inner">
@@ -170,10 +168,10 @@ export default function AboutMe({
                     </div>
                     <div className="border-2 border-gray-400 bg-[#f0f0f0] p-2 shadow-inner">
                       <div className="text-xs font-bold text-gray-900">
-                        AWS Certified
+                        4 featured projects
                       </div>
                       <div className="text-[10px] text-gray-600">
-                        Cloud Architect
+                        Built in public
                       </div>
                     </div>
                   </div>

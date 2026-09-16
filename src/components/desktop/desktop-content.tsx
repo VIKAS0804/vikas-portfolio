@@ -16,6 +16,7 @@ import {
   MySkillsDesktopIcon,
   WorkExperienceDesktopIcon,
   ContactDesktopIcon,
+  FeaturedProjectsDesktopIcon,
 } from "@/components/desktop/icons";
 import WindowManager from "@/components/window/window-manager";
 import { handleMouseMove, handleMouseUp } from "@/utils/drag";
@@ -48,6 +49,7 @@ export default function DeskTopContent({
       <ExpenseShareDesktopIcon />
       <AWSCapstoneDesktopIcon />
       <FireDetectionRobotDesktopIcon />
+      <FeaturedProjectsDesktopIcon />
       
       {/* Other Icons */}
       <IEDesktopIcon />

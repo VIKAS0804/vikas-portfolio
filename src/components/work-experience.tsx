@@ -14,6 +14,27 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
+    company: "Northeastern University, Khoury College of Computer Sciences",
+    title: "Graduate Teaching Assistant",
+    location: "Boston, MA",
+    duration: "2025 – Present",
+    achievements: [
+      "Support 60+ students through technical instruction, office hours, and assignment feedback",
+      "Help students reason through programming, debugging, and software-engineering fundamentals",
+      "Collaborate with course staff to create a clear and consistent learning experience",
+    ],
+  },
+  {
+    company: "Superstars",
+    title: "Software Developer Intern",
+    location: "Boston, MA",
+    duration: "2025 – Present",
+    achievements: [
+      "Contribute to full-stack product work and practical engineering workflows",
+      "Collaborate on well-tested, maintainable software features",
+    ],
+  },
+  {
     company: "Jio Platforms Limited",
     title: "Software Development Engineer",
     location: "Navi Mumbai, India",
@@ -225,10 +246,9 @@ export default function WorkExperience({ windowId }: { windowId: string }) {
           <div className="text-xs text-gray-600">
             {experiences.length} positions • {experiences.reduce((sum, exp) => sum + exp.achievements.length, 0)} achievements
           </div>
-          <div className="text-xs text-gray-600">Aug 2021 – Present</div>
+          <div className="text-xs text-gray-600">2021 – Present</div>
         </div>
       </div>
     </Window>
   );
 }
-
