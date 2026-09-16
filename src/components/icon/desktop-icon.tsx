@@ -39,26 +39,28 @@ export default function DesktopIcon({
 
   if (!draggable) {
     return (
-      <div className={iconClass()} onDoubleClick={onDoubleClick}>
+      <button className={iconClass()} onClick={onDoubleClick} type="button">
         <Image src={iconSrc} width={40} height={40} alt="icon" />
         {title && (
           <span className={textClass()} style={{ textShadow }}>
             {title}
           </span>
         )}
-      </div>
+      </button>
     );
   }
 
   return (
-    <div
+    <button
+      type="button"
       data-id={id}
       data-x={x}
       data-y={y}
       style={{ left: x, top: y }}
       className={iconClass()}
       onMouseDown={handleOnMouseDown}
-      onDoubleClick={onDoubleClick}
+      onClick={onDoubleClick}
+      aria-label={`Open ${title || id}`}
     >
       <Image src={iconSrc} width={40} height={40} alt="icon" />
       {title && (
@@ -66,6 +68,6 @@ export default function DesktopIcon({
           {title}
         </span>
       )}
-    </div>
+    </button>
   );
 }

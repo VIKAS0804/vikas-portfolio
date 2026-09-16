@@ -9,11 +9,16 @@ Live site: [vikasneriyanuru.com](https://vikasneriyanuru.com)
 ## What It Includes
 
 - Desktop-style navigation with draggable icons
+- Recruiter-first welcome center that explains who I am and where to start
+- One-click quick access to projects, experience, resume, and contact information
+- Individual desktop folders and detailed case studies for six featured projects
+- Mobile-friendly project and welcome windows that do not require desktop gestures
 - Draggable and resizable windows for different sections
 - Start menu and taskbar interactions inspired by Windows XP
 - Live clock and desktop-style UI behavior
 - Browser-style window for embedded exploration
 - Curated Featured Work window for the projects I want recruiters to see first
+- Earlier Projects archive that preserves older work without crowding the main desktop
 - GitHub projects window connected to my public repositories
 
 ## Tech Stack

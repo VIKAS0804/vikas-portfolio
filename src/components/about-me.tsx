@@ -168,7 +168,7 @@ export default function AboutMe({
                     </div>
                     <div className="border-2 border-gray-400 bg-[#f0f0f0] p-2 shadow-inner">
                       <div className="text-xs font-bold text-gray-900">
-                        4 featured projects
+                        6 featured projects
                       </div>
                       <div className="text-[10px] text-gray-600">
                         Built in public
@@ -183,6 +183,34 @@ export default function AboutMe({
           {/* Experience Tab */}
           {activeTab === "experience" && (
             <div className="space-y-4">
+              <div className="border-2 border-gray-400 bg-[#f0f0f0] p-3 shadow-inner">
+                <h3 className="text-xs font-bold text-gray-900 mb-2 uppercase">
+                  Current Roles
+                </h3>
+                <div className="space-y-3 text-xs text-gray-700">
+                  <div>
+                    <div className="font-semibold text-gray-900">
+                      Software Developer Intern
+                    </div>
+                    <div className="text-gray-600">Superstars</div>
+                    <div className="mt-1">
+                      • Contributing to full-stack product work and maintainable software delivery
+                    </div>
+                  </div>
+                  <div>
+                    <div className="font-semibold text-gray-900">
+                      Graduate Teaching Assistant
+                    </div>
+                    <div className="text-gray-600">
+                      Northeastern University, Khoury College of Computer Sciences
+                    </div>
+                    <div className="mt-1">
+                      • Supporting 60+ students through technical instruction, office hours, debugging, and assignment feedback
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div className="border-2 border-gray-400 bg-[#f0f0f0] p-3 shadow-inner">
                 <h3 className="text-xs font-bold text-gray-900 mb-2 uppercase">
                   Professional Experience
@@ -227,7 +255,10 @@ export default function AboutMe({
                 </h3>
                 <div className="text-xs text-gray-700">
                   <div className="font-semibold text-gray-900">
-                    AWS Certified Cloud Architect
+                    AWS Academy Graduate — Cloud Architecting
+                  </div>
+                  <div className="font-semibold text-gray-900 mt-1">
+                    AWS Academy Graduate — Cloud Foundations
                   </div>
                 </div>
               </div>
@@ -243,9 +274,12 @@ export default function AboutMe({
                 </h3>
                 <div className="text-xs text-gray-700 space-y-1">
                   <div>• React</div>
+                  <div>• React Native and Expo</div>
+                  <div>• TypeScript</div>
                   <div>• Node.js</div>
                   <div>• Java</div>
                   <div>• Python</div>
+                  <div>• FastAPI and Flask</div>
                 </div>
               </div>
 
@@ -255,6 +289,8 @@ export default function AboutMe({
                 </h3>
                 <div className="text-xs text-gray-700 space-y-1">
                   <div>• AWS (Certified Cloud Architect)</div>
+                  <div>• Google Cloud Run, Firestore, and Pub/Sub</div>
+                  <div>• Supabase, PostgreSQL, and Row Level Security</div>
                   <div>• Microservices Architecture</div>
                   <div>• System Design</div>
                   <div>• Cloud Architecture</div>
@@ -270,6 +306,8 @@ export default function AboutMe({
                   <div>• Scalable System Design</div>
                   <div>• Performance Optimization</div>
                   <div>• Process Automation</div>
+                  <div>• Applied ML and semantic retrieval</div>
+                  <div>• MLOps and CI/CD</div>
                   <div>• Clean Code Practices</div>
                 </div>
               </div>

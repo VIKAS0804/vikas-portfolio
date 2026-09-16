@@ -14,6 +14,8 @@ import MySkillsDesktopIcon from "@/components/desktop/icons/my-skills-icon";
 import WorkExperienceDesktopIcon from "@/components/desktop/icons/work-experience-icon";
 import ContactDesktopIcon from "@/components/desktop/icons/contact-icon";
 import FeaturedProjectsDesktopIcon from "@/components/desktop/icons/featured-projects-icon";
+import ProjectDesktopIcon from "@/components/desktop/icons/project-icon";
+import ProjectArchiveDesktopIcon from "@/components/desktop/icons/project-archive-icon";
 
 export {
   MyComputerDesktopIcon,
@@ -32,4 +34,6 @@ export {
   WorkExperienceDesktopIcon,
   ContactDesktopIcon,
   FeaturedProjectsDesktopIcon,
+  ProjectDesktopIcon,
+  ProjectArchiveDesktopIcon,
 };

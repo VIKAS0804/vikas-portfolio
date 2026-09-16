@@ -9,9 +9,10 @@ type WindowProps = {
   windowId: string;
   children: React.ReactNode;
   windowTitle?: string;
+  size?: "default" | "large";
 };
 
-const Window = ({ windowId, children, windowTitle }: WindowProps) => {
+const Window = ({ windowId, children, windowTitle, size = "default" }: WindowProps) => {
   const { getWindowZIndex } = useDesktop();
 
   // drag calculation
@@ -24,6 +25,7 @@ const Window = ({ windowId, children, windowTitle }: WindowProps) => {
 
     if (window) {
       const dragMouseDown = (ev: MouseEvent) => {
+        if (globalThis.window.matchMedia("(max-width: 767px)").matches) return;
         // get the mouse cursor position at startup:
         headerPosX = ev.clientX;
         headerPosY = ev.clientY;
@@ -52,8 +54,15 @@ const Window = ({ windowId, children, windowTitle }: WindowProps) => {
       if (header) {
         header.onmousedown = dragMouseDown;
       }
+
+      return () => {
+        window.onmousedown = null;
+        if (header) header.onmousedown = null;
+        document.onmouseup = null;
+        document.onmousemove = null;
+      };
     }
-  });
+  }, [getWindowZIndex, windowId]);
 
   // resize calculation
   useEffect(() => {
@@ -69,6 +78,7 @@ const Window = ({ windowId, children, windowTitle }: WindowProps) => {
       const section = window.querySelector("section");
 
       const initResize = (ev: MouseEvent) => {
+        if (globalThis.window.matchMedia("(max-width: 767px)").matches) return;
         startX = ev.clientX;
         startY = ev.clientY;
 
@@ -133,11 +143,21 @@ const Window = ({ windowId, children, windowTitle }: WindowProps) => {
       both.className = "resizer-both";
       window.appendChild(both);
       both.addEventListener("mousedown", initResize, false);
+
+      return () => {
+        right.removeEventListener("mousedown", initResize, false);
+        bottom.removeEventListener("mousedown", initResize, false);
+        both.removeEventListener("mousedown", initResize, false);
+        right.remove();
+        bottom.remove();
+        both.remove();
+        stopResize();
+      };
     }
-  });
+  }, [windowId]);
 
   return (
-    <dialog id={windowId} open>
+    <dialog id={windowId} className={size === "large" ? "window-large" : ""} open>
       <WindowHeader windowId={windowId} windowTitle={windowTitle} />
       <section className="overflow-auto">{children}</section>
     </dialog>

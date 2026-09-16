@@ -69,19 +69,19 @@ export default function MyComputer({ windowId }: { windowId: string }) {
                     <span className="font-semibold text-gray-900 min-w-[80px]">
                       Processor:
                     </span>
-                    <span>Full-Stack Development (React, Node.js, Java)</span>
+                    <span>Full-stack, cloud, mobile, and applied ML engineering</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="font-semibold text-gray-900 min-w-[80px]">
                       Memory:
                     </span>
-                    <span>2+ years SDE experience @ Jio Platforms</span>
+                    <span>Software Developer Intern @ Superstars · Graduate TA @ Khoury</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="font-semibold text-gray-900 min-w-[80px]">
                       Storage:
                     </span>
-                    <span>10+ major projects delivered</span>
+                    <span>6 featured case studies · earlier work preserved in the archive</span>
                   </div>
                   <div className="flex gap-2">
                     <span className="font-semibold text-gray-900 min-w-[80px]">
@@ -93,7 +93,7 @@ export default function MyComputer({ windowId }: { windowId: string }) {
                     <span className="font-semibold text-gray-900 min-w-[80px]">
                       Graphics:
                     </span>
-                    <span>AWS Cloud Architect | Docker | Kubernetes</span>
+                    <span>AWS · GCP · Docker · Kubernetes · CI/CD</span>
                   </div>
                 </div>
               </div>
@@ -206,4 +206,3 @@ export default function MyComputer({ windowId }: { windowId: string }) {
     </Window>
   );
 }
-
